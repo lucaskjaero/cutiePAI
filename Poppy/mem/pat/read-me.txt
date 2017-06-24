@@ -1,0 +1,25 @@
+-------------------------------------------------------
+// About innate.txt 
+// "pls" at the start indicates innate commands. 
+// Patterns used in innate.txt cannot be used in learned.txt
+// Which is ok, as user usually don't put pls as the beginning of their custom commands
+// This is a way to speed up pattern search.
+
+
+pls download youtube videos 
+// pattern to be matched with user input (word-by-word)
+
+youtube,internet 
+// topic(s) of the pattern. Each same pattern of a topic can only have 1 reaction.
+// first reaction is default, executed when there is no match for topic.
+// When user is not happy with default, Poppi would ask the user to choose between other existing topics.
+// If the user reply with something along the line of "This should belong to another different topic"...
+// ... Poppi would ask the user and make an exhausted change to the pattern and all similar patterns
+
+1,234 
+// related reaction ID for each topic above.
+// Innate patterns often have only 1 reaction.
+
+-------------------------------------------------------
+// About learned.txt
+// pretty much the same as innate.txt

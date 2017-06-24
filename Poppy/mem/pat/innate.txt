@@ -1,0 +1,63 @@
+pls act cannot find
+failed
+-1
+pls download youtube videos
+youtube
+-2
+pls help me download youtube videos
+youtube
+-2
+pls open youtube download sites
+youtube
+-2
+pls youtube download sites
+youtube
+-2
+pls youtube downloaders
+youtube
+-2
+pls dance for me
+fun
+-3
+pls dance
+fun
+-3
+pls touch your hair
+fun
+-4
+pls correct my typing
+work
+-5
+pls autocorrect me
+work
+-5
+pls magnify screen
+work
+-6
+pls show part of my screen bigger
+work
+-6
+pls get correction from google
+work
+-7
+pls correct me with google
+work
+-7
+pls show me some online learning sites
+study
+-8
+pls show online learning sites
+study
+-8
+pls learning sites
+study
+-8
+pls repeat after me *popvar
+repeat
+-800
+pls show me a video about *popvar
+youtube
+-1000
+pls a vid of *popvar
+youtube
+-1000

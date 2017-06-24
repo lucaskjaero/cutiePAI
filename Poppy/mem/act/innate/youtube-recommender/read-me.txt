@@ -1,0 +1,23 @@
+// About queries.txt.
+cat
+// search query
+1
+// video list id
+
+----------------------------------------------------------
+// About x.txt
+95ImXirddgU
+// the 11 char-length youtube video ID
+
+----------------------------------------------------------
+// About x-hist.txt
+95ImXirddgU
+// the 11 char-length youtube video ID
+
+
+----------------------------------------------------------
+// About x-info.txt
+64
+// number of videos in x.txt
+9
+// number of 

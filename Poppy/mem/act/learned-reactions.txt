@@ -1,0 +1,48 @@
+i:1
+Sure thing.--Dropped it.
+0
+mic-drop1,mic-drop2,mic-drop3
+1
+n
+i:2
+Yes, I feel you.--That just means you're unique.
+0
+mfw-my-fetish-but-not-others
+2
+n
+i:3
+Downvotes on $popvar are just arrow icons. Stay positive!--Aww, don't feel so bad. They can't kill you with downvotes on $popvar.
+0
+downvoted-me1,downvoted-me2,downvoted-me3,downvoted-me4
+3
+n
+i:4
+Oh, that's cool. Someone agreed with you on $popvar.--Sure is nice to know someone out there on $popvar agreed with you.
+0
+upvoted-me1,upvoted-me2,upvoted-me3,upvoted-me4,upvoted-me5,upvoted-me6
+4
+n
+i:5
+The feeling is both toxic and addictive.--Don't feel too destructive, though.
+0
+downvote-them1,downvote-them2
+5
+n
+i:6
+Surfing is nice, but I would suck at it.--I like surfing, but it sure requires a lot of practice.
+0
+surfing1,surfing2
+6
+n
+i:7
+I don't dislike it. After all, I can buy so many things with it.--Money is just the tool to help me reach my vision: world domination (jk).
+0
+money-count,some-money,money-get,money-throw,money-uninterest
+7
+n
+i:100001
+Eh hehe.
+0
+funny-face
+100001
+n

@@ -1,0 +1,32 @@
+// About innate-reaction.txt.
+// Note: Every reaction has both Chat Response(s) and an Action (linked executable file)
+
+i:-1 
+// ID of the reaction. Innate reaction IDs are negative
+
+Downloading YouTube videos is...--Be careful when... 
+// Chat response(s). Poppi randomizes these for authenticity
+
+sound-turning,video-watching
+// Names of the .gif files used for reaction
+
+-2,-3,-4
+// ID(s) of next possible patterns to watch. This is used to chain reactions together.
+// IF the only ID is 0, there is no next possible patterns to watch. Meaning the reaction is stand-alone.
+// IF there are 2 IDs, and both have the same value, they would be executed without user's chat input.
+
+1
+// Origin ID of the chain reaction (if-any). This is used for "Do it again" button.
+// Each reaction can only have 1 origin ID. A reaction can have its own ID as origin ID.
+// The "Do it again" button starts the same reaction (chain) from-the-top without user's chat input.
+
+open-stuffs/open-youtube-download-sites
+// Directory of the related Action. If the whole thing = 'n' then there is no related Action.
+// First part is the actionType folder, which groups action cases base on 1 core functionality/theme
+// Second part is the actionCase folder, which group actions base on specific cases
+
+
+----------------------------------------------------------
+// About learned-reaction.txt.
+// Pretty much the same as innate-reaction.txt.
+// Learned reaction IDs are positive

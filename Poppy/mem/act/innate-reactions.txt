@@ -1,0 +1,60 @@
+i:-1
+I find it difficult to understand what you mean.
+0
+cannot-find
+-1
+n
+i:-2
+Downloading YouTube videos is not really illegal, but it must be for your personal use only.--Be careful when you re-use the videos you download from YouTube.--If you like the videos you download, be sure to like those videos and subscribe to the creators.--If you like the videos you download, be sure to disable ad-blockers and watch some ads to support the creators.
+0
+sound-turning,makeup
+-2
+open-stuffs/open-youtube-download-sites
+i:-3
+Okay!--Okie Dokie.
+0
+dance
+-3
+n
+i:-4
+Sure thing.--Touch my hair now.
+0
+touch-hair
+-4
+n
+i:-5
+Ok. Now your misspellings will be autocorrected. Press Esc key to stop autocorrection. Now, try typing "reccomendation".--Sure, remember to press Esc key for stopping autocorrection. Try typing "enlargment".
+0
+my-own-bible
+-5
+autocorrect/common-mispelling
+i:-6
+Okay. Showing things in bigger size.--Sure, larger is always better.
+0
+hold-video-okay
+-6
+screen-magnifier/magnify1
+i:-7
+Ok. Now you can highlight a phrase and press Alt+G to get correction from Google. Press Esc key to stop this. Now, try "dsn didego".--Good. Highlight a phrase, press Alt+G to get correction from Google; Esc key to stop. Now, try "miraamar colleg".
+0
+google
+-7
+autocorrect/google-didumean
+i:-8
+Ok. Have fun learning.--Sure, here you go.
+0
+smart-thumbs-up,reading-cat
+-8
+open-stuffs/online-learning-sites
+i:-800
+Let's see...$popvar--Sure, $popvar
+0
+overload
+-800
+n
+i:-1000
+Here's 1 Youtube video about $popvar. Do you like it?--Showing you a Youtube video about $popvar. Do you want to watch it again sometimes?
+-1001,-1002
+hold-video-okay,sound-turning
+-1000
+n

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Poppy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Poppy_jar/Poppy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
