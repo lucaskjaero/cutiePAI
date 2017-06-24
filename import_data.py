@@ -49,7 +49,7 @@ def process_images(images):
 
 
 def process_output(output):
-    n_value = np.max(output)
+    n_values = np.max(output) + 1
     return np.eye(n_values)[output]
 
 
