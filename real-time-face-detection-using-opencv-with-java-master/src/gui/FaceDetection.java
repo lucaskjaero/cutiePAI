@@ -32,11 +32,11 @@ import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 
-
 /**
  *
  * @author Taha Emara
  */
+
 public class FaceDetection extends javax.swing.JFrame {
 ///
 
@@ -81,13 +81,16 @@ public class FaceDetection extends javax.swing.JFrame {
                             Graphics g = jPanel1.getGraphics();
                             faceDetector.detectMultiScale(frame, faceDetections);
                             
+                            
                             for (Rect rect : faceDetections.toArray()) {
                                // System.out.println("ttt");
                                 Mat cropped = frame.submat(rect);
                                 String s = String.valueOf(i);
                                 System.out.println(s);
                                 System.out.println("Iter");
-                                Highgui.imwrite("C:\\Users\\Kim\\Documents\\" + String.valueOf(i) + ".jpg", cropped);
+                                //Highgui.imwrite("C:\\Users\\Kim\\Documents\\" + String.valueOf(i) + ".jpg", cropped);
+                                //Highgui.imwrite(String.valueOf(i) + ".jpg", cropped);
+                                Highgui.imwrite("test.jpg", cropped);
                                 i = i+1;
                                 Core.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
                                         new Scalar(0, 255,0));
