@@ -46,14 +46,14 @@ class Model:
             with open("prediction.txt", "w") as my_file:
                 my_file.write(final_prediction)
 
-            print("Writing prediction")
+            #print("Writing prediction")
+            print("Current emotion: %s" % final_prediction)
 
 
 def main():
     model = Model()
     while True:
         model.predict()
-        print("Ran")
         time.sleep(1)
 
 

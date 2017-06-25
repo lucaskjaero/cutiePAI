@@ -1,7 +1,7 @@
-surprise:0.60387
-happy:0.13374
-fear:0.11183
-angry:0.07037
-neutral:0.04789
-sad:0.02789
-disgust:0.00441
+sad:0.40621
+neutral:0.39070
+fear:0.07603
+happy:0.07324
+angry:0.04160
+surprise:0.01149
+disgust:0.00074
