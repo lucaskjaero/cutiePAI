@@ -1,4 +1,5 @@
 from os.path import expanduser
+from math import ceil, floor
 
 import numpy as np
 import pandas as pd
@@ -12,6 +13,7 @@ def load_data(do_reshape=True):
 
     train_set = data.loc[data['Usage'] == "Training"]
     test_set = data.loc[data['Usage'] == "PrivateTest"]
+    validation_set = data.loc[data['Usage'] == "PublicTest"]
 
     x_train = process_images(train_set["pixels"])
     y_train = process_output(train_set["emotion"])
@@ -51,6 +53,54 @@ def process_images(images):
 def process_output(output):
     n_values = np.max(output) + 1
     return np.eye(n_values)[output]
+
+def resize_and_letterbox(image):
+    TARGET_WIDTH = 299
+    TARGET_HEIGHT = 299
+
+    # Default values
+    width = image.width
+    height = image.height
+
+    x1 = 0
+    y1 = 0
+    x2 = width
+    y2 = height
+
+    # Calculate new dimensions and letterboxing positions
+    if width == height:
+        new_width, new_height = TARGET_WIDTH, TARGET_HEIGHT
+    elif width > height:
+        new_height = ceil(TARGET_WIDTH * (height / width))
+        new_width = TARGET_WIDTH
+
+        # prepare for letterboxing
+        buffer = TARGET_HEIGHT - new_height
+        # If there's an extra pixel, add it to the top
+        y1 = ceil(buffer / 2)
+        y2 = y1 + new_height
+    elif width < height:
+        new_width = ceil(TARGET_HEIGHT * (width / height))
+        new_height = TARGET_HEIGHT
+
+        # prepare for letterboxing
+        buffer = TARGET_WIDTH - new_width
+        # If there's an extra pixel, add it to the right side.
+        x1 = floor(buffer / 2)
+        x2 = x1 + new_width
+
+    # Resize the image
+    resized_image = image.resize((new_width, new_height))
+
+    # Create a blank background image to paste into
+    letterboxed_image = np.zeros(TARGET_SHAPE)
+    letterboxed_image.fill(255)
+
+    # Letterbox the image
+    image_array = np.array(resized_image)
+    letterboxed_image[y1:y2, x1:x2] = image_array
+
+    return letterboxed_image
 
 
 def main():
