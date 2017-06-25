@@ -19,11 +19,14 @@ public class Recorder {
 
    public void start() {
       try {
+          // Create and open the target data line to start recording
          DataLine.Info targetInfo = new DataLine.Info(TargetDataLine.class, format);
          targetLine = (TargetDataLine) AudioSystem.getLine(targetInfo);
          targetLine.open(format);
          targetLine.start();
 
+          // Store the audio into a .wave file with randomly generated universally unique ID as filename
+          // TODO: Use recognizable filename
          AudioInputStream ais = new AudioInputStream(targetLine);
          AudioSystem.write(ais, AudioFileFormat.Type.WAVE,
                new File(UUID.randomUUID() + ".wav"));
@@ -33,6 +36,8 @@ public class Recorder {
    }
 
    public static void main(String[] args) {
+       // Ask the user how long the recording will last (seconds)
+       // TODO: Change the process so that it restarts automatically after fixed amount of time (eg. 10 sec.)
       new Recorder(Integer.parseInt(JOptionPane
                      .showInputDialog("How long do you want to record (seconds)")));
    }
@@ -41,15 +46,21 @@ public class Recorder {
       Thread stopper = new Thread(new Runnable() {
          public void run() {
             try {
+                // Put the thread to sleep for [time] seconds
+                // Meanwhile, the user's audio is being recorded in start()
                Thread.sleep(time*1000);
             } catch (InterruptedException ex) {
                ex.printStackTrace();
             }
+             
+             // After [time] seconds, stop the recording
             targetLine.stop();
             targetLine.close();
             JOptionPane.showMessageDialog(null, "Finished.");
          }
       });
+       
+       // Start the timer thread before calling start(), which starts the recording
       stopper.start();
       start();
    }
