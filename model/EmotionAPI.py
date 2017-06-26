@@ -88,7 +88,7 @@ def runthisfile():
         data = f.read()
 
     _url = 'https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize'
-    _key = '9a2f9f6e4c694c72aa1bd6ea84ba5a87'
+    _key = 'YOUR KEY HERE.'
     _maxNumRetries = 10
     headers = dict()
     headers['Ocp-Apim-Subscription-Key'] = _key
