@@ -43,7 +43,7 @@ def process_images(images):
         image_array = image_array.reshape(48, 48, 1)
 
         # Normalize between -1 and 1
-        normalized_image_array = (2 * (image_array / 256)) - 1
+        normalized_image_array = image_array / 256
 
         images_output.append(normalized_image_array)
 

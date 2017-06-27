@@ -3,3 +3,10 @@
 fer2013.csv
 .ipynb_checkpoints/*
 .ipynb_checkpoints/Tensorflow-checkpoint.ipynb
+*.DS_Store
+*.zip
+*.jar
+Poppy/.DS_Store
+*.jar
+.DS_Store
+*.hd5
